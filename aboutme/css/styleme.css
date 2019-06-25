@@ -37,7 +37,6 @@ a:visited {
 
 a:hover {
     text-decoration-line: underline;
-    text-underline-position: below;
 }
 
 a:active{
