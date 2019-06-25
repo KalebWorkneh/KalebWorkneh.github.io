@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-	color: #FF0000;
+	color: #FFFFFF;
 }
 
 h3 {
@@ -11,10 +11,85 @@ h3 {
 }
 
 p {
-    font-family: "Arial Black";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-li {
+p::first-letter {
+    font-size: 2.5ex;
+}
+
+ul {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
+
+a:link {
+    text-decoration: none;
+}
+
+a:link {
+    text-underline-position: unset;
+}
+
+a:visited {
+    text-underline-position: unset;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    text-underline-position: below;
+}
+
+a:active{
+    text-underline-position: unset;
+}
+
+.moviesList {
+    list-style: upper-roman;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.moviesList > li {
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+}
+
+#movie1 {
+    background-image: url(../Images/poster1.jpg);
+}
+
+#movie2 {
+    background-image: url(../Images/poster2.jpg);
+}
+
+#movie3 {
+    background-image: url(../Images/poster3.jpg);
+}
+
+dl {
+    background-color: #FFFF00;
+    width: 270px;
+    padding: 10px;
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: green;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+}
+
+
+
