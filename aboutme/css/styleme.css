@@ -18,6 +18,11 @@ p::first-letter {
     font-size: 2.5ex;
 }
 
+.mood {
+    width: 110px;
+    height: 110px;
+}
+
 ul {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
@@ -49,9 +54,13 @@ a:active{
     font-weight: bolder;
 }
 
-.moviesList > li {
+#movie1, #movie2, #movie3 {
+    width: 250px;
+    padding: 10px;
+    background-color:#0387d3;
     background-repeat: no-repeat;
-    background-position-x: 300px;
+    background-size: contain;
+    text-align: left;
 }
 
 #movie1 {
@@ -66,28 +75,23 @@ a:active{
     background-image: url(../Images/poster3.jpg);
 }
 
-dl {
-    background-color: #FFFF00;
-    width: 270px;
-    padding: 10px;
+dt, dd {
+    color: green;
+    font-weight: bold;
 }
 
 dt {
     float: left;
     clear: left;
-    width: 100px;
+    width: 130px;
     text-align: right;
-    font-weight: bold;
-    color: green;
-}
-
-dt::after {
-    content: ":";
 }
 
 dd {
     margin: 0 0 0 110px;
     padding: 0 0 0.5em 0;
+    text-align: left;
+    padding-left: 25px;
 }
 
 
