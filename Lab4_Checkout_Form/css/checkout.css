@@ -1,0 +1,54 @@
+body{
+    border: 2px black solid;
+    padding: 10px;
+    background-color: lightyellow;
+}
+
+h2{
+    margin: 0px;
+    text-align: center;
+}
+
+fieldset > div, select, input{
+    margin: 3px;
+}
+
+div > select, input{
+    margin: 3px;
+}
+
+div > div{
+    margin: 3px;
+}
+
+input{
+    margin: 3px;
+}
+
+#billing1, #billing2, #billing3{
+    border: lightgrey solid;
+}
+
+#submit{
+    text-align: center;
+}
+
+legend{
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.lowerField, #billing2, #billing3{
+    margin-top: 10px;
+}
+
+:required{
+    background: lightpink;
+}
+
+#guide{
+    background-color: lightpink;
+    display: table;
+    margin:auto;
+    text-align: center;
+}

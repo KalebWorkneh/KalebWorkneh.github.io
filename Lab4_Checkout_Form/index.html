@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <title>Checkout Form</title>
+    <link href="css/checkout.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2>CHECK-OUT FORM</h2>
+    <input id="guide" type="text" placeholder="Highlighted Fields are Required" size="40" readonly>
+    <form action="" method="POST" enctype="" novalidate autocomplete>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+                First Name
+                <input type="text" name="fname" placeholder="Your First Name" size="40" required>
+                Middle Name
+                <input type="text" name="fname" placeholder="Your Middle Name or initial" size="40">
+                Last Name
+                <input type="text" name="fname" placeholder="Your Last Name" size="40" required>
+            </div>
+            <div>
+                Email
+                <input type="email" name="email" placeholder="Your Email Address" size="40">
+                Phone Number
+                <input type="tel" placeholder="Your Phone Number" size="40">
+            </div>
+        </fieldset>
+        <fieldset class="lowerField">
+            <legend>Shipping Address</legend>
+            <div>
+                Street (Line 1)
+                <input type="text" name="street1" placeholder="Your Street Address" required>
+                Street (Line 2)
+                <input type="text" name="street2" placeholder="Apt / Bldg No.">
+                City
+                <input type="text" name="city" placeholder="Your City" required>
+            </div>
+            <div>State
+                <SELECT NAME="state" required>
+                    <OPTION SELECTED>Select a State
+                    <OPTION>Alabama
+                    <OPTION>Alaska
+                    <OPTION>Arizona
+                    <OPTION>Arkansas
+                    <OPTION>California
+                    <OPTION>Colorado
+                    <OPTION>Connecticut
+                    <OPTION>Delaware
+                    <OPTION>Florida
+                    <OPTION>Georgia
+                    <OPTION>Hawaii
+                    <OPTION>Idaho
+                    <OPTION>illinois
+                    <OPTION>Indiana
+                    <OPTION>Iowa
+                    <OPTION>Kansas
+                    <OPTION>Kentucky
+                    <OPTION>Louisiana
+                    <OPTION>Maine
+                    <OPTION>Maryland
+                    <OPTION>Massachusetts
+                    <OPTION>Michigan
+                    <OPTION>Minnesota
+                    <OPTION>Mississippi
+                    <OPTION>Missouri
+                    <OPTION>Montana
+                    <OPTION>Nebraska
+                    <OPTION>Nevada
+                    <OPTION>New Hampshire
+                    <OPTION>New Jearsey
+                    <OPTION>New Mexico
+                    <OPTION>New York
+                    <OPTION>North Carolina
+                    <OPTION>North Dakota
+                    <OPTION>Ohio
+                    <OPTION>Oklahoma
+                    <OPTION>Oregon
+                    <OPTION>Pennsylvania
+                    <OPTION>Rhode Island
+                    <OPTION>South Carolina
+                    <OPTION>South Dakota
+                    <OPTION>Tennessee
+                    <OPTION>Texas
+                    <OPTION>Utah
+                    <OPTION>Vermount
+                    <OPTION>Virginia
+                    <OPTION>Washington
+                    <OPTION>Washington D.C.
+                    <OPTION>West Virginia
+                    <OPTION>Wisconsin
+                    <OPTION>Wyoming
+                </SELECT>
+                Zip
+                <input type="text" name="zipCode" placeholder="Your Zip Code Here" required>
+                Country
+                <input type="text" name="country" value="United States" readonly>
+            </div>
+        </fieldset>
+        <fieldset class="lowerField">
+            <Legend>Billing Information</Legend>
+            <fieldset id="billing1">
+                <Legend>Card Details</Legend>
+                Credit/Debit
+                <select name="debitcredit">
+                    <option value="credit">Credit</option>
+                    <option value="debit">Debit</option>
+                </select>
+                <div>
+                    Card Type
+                    <input type="radio" name="cardType" value="visa" />Visa
+                    <input type="radio" name="cardType" value="masterCard" />Master Card
+                    <input type="radio" name="cardType" value="americanExp" />American Express
+                    <input type="radio" name="cardType" value="discover" />Discover
+                </div>
+                Card Number
+                <input type="text" name="cardNo" placeholder="Your Card Number" size="40" required>
+                <div>
+                    Expiration
+                    <select name="expYear" aria-placeholder="YEAR">
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                    <select name="expMonth" aria-placeholder="MONTH">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                CVV Code
+                <input type="text" name="cvv" placeholder="Your 3 or 4 digit CVV number" size="40" required>
+            </fieldset>
+            <fieldset id="billing3">
+                    <legend>Card Holders Information</legend>
+                    <div>
+                        Full Name
+                        <input type="text" name="fname" placeholder="Your Full Name As It Appears On Your Card" size="80" required>
+                    </div>
+                    <div>
+                        Phone Number
+                        <input type="tel" placeholder="Your Phone Number" size="40">
+                    </div>
+                </fieldset>
+            <fieldset id="billing2">
+                <Legend>Billing Address</Legend>
+                <input type="radio" name="matchAddress" value="yes">Same as Shipping Address
+                <input type="radio" name="matchAddress" value="no">Different Address
+                <div>
+                    <div>
+                        Street Line 1
+                        <input type="text" name="street1" placeholder="Your Street Address" required>
+                        Street Line 2
+                        <input type="text" name="street2" placeholder="Apt / Bldg No.">
+                        City
+                        <input type="text" name="city" placeholder="Your City" required>
+                    </div>
+                    <div>State
+                        <SELECT NAME="state" required>
+                            <OPTION SELECTED>Select a State
+                            <OPTION>Alabama
+                            <OPTION>Alaska
+                            <OPTION>Arizona
+                            <OPTION>Arkansas
+                            <OPTION>California
+                            <OPTION>Colorado
+                            <OPTION>Connecticut
+                            <OPTION>Delaware
+                            <OPTION>Florida
+                            <OPTION>Georgia
+                            <OPTION>Hawaii
+                            <OPTION>Idaho
+                            <OPTION>illinois
+                            <OPTION>Indiana
+                            <OPTION>Iowa
+                            <OPTION>Kansas
+                            <OPTION>Kentucky
+                            <OPTION>Louisiana
+                            <OPTION>Maine
+                            <OPTION>Maryland
+                            <OPTION>Massachusetts
+                            <OPTION>Michigan
+                            <OPTION>Minnesota
+                            <OPTION>Mississippi
+                            <OPTION>Missouri
+                            <OPTION>Montana
+                            <OPTION>Nebraska
+                            <OPTION>Nevada
+                            <OPTION>New Hampshire
+                            <OPTION>New Jearsey
+                            <OPTION>New Mexico
+                            <OPTION>New York
+                            <OPTION>North Carolina
+                            <OPTION>North Dakota
+                            <OPTION>Ohio
+                            <OPTION>Oklahoma
+                            <OPTION>Oregon
+                            <OPTION>Pennsylvania
+                            <OPTION>Rhode Island
+                            <OPTION>South Carolina
+                            <OPTION>South Dakota
+                            <OPTION>Tennessee
+                            <OPTION>Texas
+                            <OPTION>Utah
+                            <OPTION>Vermount
+                            <OPTION>Virginia
+                            <OPTION>Washington
+                            <OPTION>Washington D.C.
+                            <OPTION>West Virginia
+                            <OPTION>Wisconsin
+                            <OPTION>Wyoming
+                        </SELECT>
+                        Zip
+                        <input type="text" name="zipCode" placeholder="Your Zip Code Here" required>
+                        Country
+                        <input type="text" name="country" value="United States" readonly>
+                    </div>
+                </div>
+            </fieldset>
+        </fieldset>
+        <p>
+            <input type="checkbox" name="agreement">I agree to the terms and consitions of skh hsklgh dfhgk lkhg
+            slkf sfglkf slfkghdklfng lsfhgkdfhg lghdlkng ldrkhgln drglknglk ldrng dghkeng dg;engk dlnglkeng dgkg
+            kfjgkldhg kdhgkldng dlkghkd dhlgk dgkdhg fdgkdhg dlgkl dlfhkldfng dlgnkdng dkngkldng dlkfngkldng hfg
+            jgjgd.
+        </p>
+        <div id="submit" >
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
