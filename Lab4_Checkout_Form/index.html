@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf8">
+    <meta charset="utf-8">
     <title>Checkout Form</title>
     <link href="css/checkout.css" rel="stylesheet">
 </head>
@@ -10,7 +10,7 @@
 <body>
     <h2>CHECK-OUT FORM</h2>
     <input id="guide" type="text" placeholder="Highlighted Fields are Required" size="40" readonly>
-    <form action="" method="POST" enctype="" novalidate autocomplete>
+    <form action="../index.html" method="POST" enctype="text/plain" autocomplete="on">
         <fieldset>
             <legend>Personal Details</legend>
             <div>
@@ -40,8 +40,7 @@
             </div>
             <div>State
                 <SELECT NAME="state" required>
-                    <OPTION SELECTED>Select a State
-                    <OPTION>Alabama
+                    <OPTION selected>Alabama
                     <OPTION>Alaska
                     <OPTION>Arizona
                     <OPTION>Arkansas
@@ -119,8 +118,8 @@
                 <input type="text" name="cardNo" placeholder="Your Card Number" size="40" required>
                 <div>
                     Expiration
-                    <select name="expYear" aria-placeholder="YEAR">
-                        <option value="2019">2019</option>
+                    <select name="expYear">
+                        <option value="2019" selected>2019</option>
                         <option value="2020">2020</option>
                         <option value="2021">2021</option>
                         <option value="2022">2022</option>
@@ -128,8 +127,8 @@
                         <option value="2024">2024</option>
                         <option value="2025">2025</option>
                     </select>
-                    <select name="expMonth" aria-placeholder="MONTH">
-                        <option value="1">January</option>
+                    <select name="expMonth" placeholder="MONTH">
+                        <option value="1" selected>January</option>
                         <option value="2">February</option>
                         <option value="3">March</option>
                         <option value="4">April</option>
@@ -172,8 +171,7 @@
                     </div>
                     <div>State
                         <SELECT NAME="state" required>
-                            <OPTION SELECTED>Select a State
-                            <OPTION>Alabama
+                            <OPTION selected>Alabama
                             <OPTION>Alaska
                             <OPTION>Arizona
                             <OPTION>Arkansas
