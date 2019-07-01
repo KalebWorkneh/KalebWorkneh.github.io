@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tip Calculator</title>
+		<link href="css/tip.css" type="text/css" rel="stylesheet" />
+        <script>
+            function calcTip() {
+                var subtotalElem = document.getElementById("subtotal");
+                var tipElem = document.getElementById("tip");
+                var tipAmountElem = document.getElementById("tipAmount");
+                var totalElem = document.getElementById("total");
+                var subtotal = parseFloat(subtotalElem.value);
+                var tipPercentage = tipElem.value/100;
+                var tip = subtotal*tipPercentage;
+                var total = subtotal + tip;
+                tipAmountElem.innerHTML = '$' + tip.toFixed(2);
+                totalElem.innerHTML = '$' + total.toFixed(2);
+            }
+        </script>
+	</head>
+
+	<body>
+		<h1>
+			<img id="logo" src="Images/calc.jpg" alt="++--**//" />
+			  Tip Calculator
+		</h1>
+
+		<div>
+			<label><input id="subtotal" type="text" /> $ Subtotal</label>
+		</div>
+
+		<div>
+			<label><input id="tip" type="text" /> % Tip</label>
+		</div>
+
+		<div>
+			<button id="btn"  onclick="calcTip();">Calculate Tip</button>
+		</div>
+
+		<hr />
+
+		<div class="result">
+            <p>Tip:</p>
+            <p id="tipAmount">$0.00</p>
+        </div>
+        
+        <div class="result">
+            <p>Your Total:</p>
+            <p id="total">$0.00</p>
+        </div>
+        <div id="validators">
+            <a href="https://validator.w3.org/check/referer">
+                <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="Validate"/>
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="Valid CSS!"/>
+            </a>
+        </div>   
+	</body>
+</html>
