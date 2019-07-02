@@ -28,5 +28,7 @@ function decorateWithCB(){
         mytext.style.textDecoration = "underline";
     }else{
         mytext.style.fontWeight = "normal";
+        mytext.style.color = "";
+        mytext.style.textDecoration = "";
     }
 }
