@@ -15,7 +15,7 @@
 		<script src="js/decoratemytext.js"></script>
 	</head>
 
-	<body>
+	<body id="body1">
 		<h1>Text Decorator</h1>
 		
 		<div>
@@ -24,15 +24,14 @@
         
         <fieldset>
             <legend>Text</legend>
-            <textarea id="inputText" type="text" rows="4" cols="30">
-                Sample Text
-			</textarea>
+            <textarea id="inputText" type="text" rows="4" cols="30"></textarea>
 		</fieldset>
 
 		<fieldset>
 			<legend>Decoration</legend>
 			<button id="decoratorBtn" onclick="decorateWithBtn();">Bigger Decorations!</button><br/>
-			<input id="myCheckBox" type="checkbox" onchange="decorateWithCB();">Bling
+			<input id="myCheckBox" type="checkbox" onchange="decorateWithCB();">Bling<br/>
+			<button id="pigBtn" onclick="pigLatin();">Pig Latin</button><br/>
 		</fieldset>
 
 		<!-- Your UI controls go here -->
