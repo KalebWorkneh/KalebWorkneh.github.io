@@ -1,4 +1,8 @@
-window.onload = loader;
+window.onload = function(){
+    document.getElementById("decoratorBtn").onclick = decorateWithBtn;
+    document.getElementById("myCheckBox").onchange = decorateWithCB;
+    document.getElementById("pigBtn").onclick = pigLatin;
+};
 
 let flag = 0;
 let x;
@@ -54,10 +58,4 @@ function pigLatin(){
         }
     }
     myText.value = myNew;
-}
-
-function loader(){
-    document.getElementById("decoratorBtn").onclick = decorateWithBtn;
-    document.getElementById("myCheckBox").onchange = decorateWithCB;
-    document.getElementById("pigBtn").onclick = pigLatin;
 }
