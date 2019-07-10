@@ -1,3 +1,5 @@
+(function(){
+
 "use strict"
 
 window.onload = function(){
@@ -66,7 +68,6 @@ function animationLooper(){
         }else if(i === (arr.length - 1)){
             i = 0;
         }
-        console.log(i);
         v.innerHTML = arr[i];
         document.getElementById("startBtn").disabled = true;
         document.getElementById("animationSelector").disabled = true;
@@ -80,3 +81,4 @@ function animationStopper(){
     document.getElementById("animationSelector").disabled = false;
 }
 
+})();

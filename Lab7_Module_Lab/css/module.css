@@ -1,0 +1,10 @@
+#accountName, #depositAmount, #createBtn, #accounts{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#validators{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
