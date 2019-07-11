@@ -1,0 +1,50 @@
+body, button {
+	font-family:'Times New Roman', Times, serif;
+	font-size: 14pt;
+	text-align: center;
+	background-color: white;
+}
+
+#puzzlearea {
+	font-size: 40pt;
+	width: 400px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.puzzlepiece {
+	background-image: url("Images\background.jpg");
+	border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	position: absolute;
+}
+
+.movablepiece:hover {
+	border-color: rgba(255, 0, 0, 0.349);
+	color:rgba(255, 0, 0, 0.349);
+}
+
+#gradingarea {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 999999;
+}
+
+.valid {
+	background-color: #bfb;
+}
+
+.invalid {
+	background-color: #f88;
+}
+
+#validators{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
