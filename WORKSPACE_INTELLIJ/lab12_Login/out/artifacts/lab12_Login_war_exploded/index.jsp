@@ -16,12 +16,11 @@
     <h1>Login Credentials</h1>
     <form method="post" action='login'>
       <%
-        String value = "";
-        String checkbox = "";
+        String value = "", checkbox = "";
         Cookie[] cookies = request.getCookies();
         if(cookies != null){
           for(Cookie c : cookies){
-            if(c.getName()=="username"){
+            if(c.getName().equals("username")){
               value = c.getValue();
               checkbox = "checked";
               break;
@@ -43,7 +42,7 @@
         %>
       </div>
       <input type='submit' value='Login'/>
-      <label><input id="cb" type='checkbox' name='remember' <%=checkbox%>/> Remember Me</label>
+      <label><input id="cb" type='checkbox' name='remember' value="on" <%=checkbox%>/> Remember Me</label>
     </form>
   </body>
 </html>

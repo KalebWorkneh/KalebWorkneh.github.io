@@ -11,6 +11,8 @@ import java.util.List;
 
 public class LoginServlet extends HttpServlet {
 
+    private Object remember;
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userName = req.getParameter("username");
@@ -38,10 +40,20 @@ public class LoginServlet extends HttpServlet {
             s.setAttribute("username", match.getUsername());
             s.setAttribute("password", match.getPassword());
             s.setAttribute("user",match);
-            if(req.getAttribute("remember")!=null){
+            String r = req.getParameter("remember");
+            if(r != null){
                 Cookie c = new Cookie("username", match.getUsername());
-                c.setMaxAge(30*24*60*60);
+                c.setMaxAge(2592000);
                 resp.addCookie(c);
+            } else {
+                for(Cookie c : req.getCookies()){
+                    if(c.getValue().equals(userName)){
+                        Cookie d = new Cookie("username", "");
+                        d.setMaxAge(0);
+                        resp.addCookie(d);
+                        break;
+                    }
+                }
             }
             RequestDispatcher rd = req.getRequestDispatcher("welcome.jsp");
             rd.forward(req, resp);
