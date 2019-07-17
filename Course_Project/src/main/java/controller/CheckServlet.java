@@ -69,7 +69,7 @@ public class CheckServlet extends HttpServlet {
         if(available.size()!=0){
             msg = "All set! The room you requested is available. Click NEXT to Proceed";
         }else{
-            msg = "Sorry The room you requested is not available for the chosen dates. " +
+            msg = "Sorry! The room you requested is not available for the chosen dates. " +
                     "Please retry with different dates and/or room type";
         }
 
