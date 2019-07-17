@@ -16,7 +16,7 @@
     <p>Username: ${username}</p>
     <p>Password: ${password}</p>
     <form method="post" action="logout">
-        <input type="submit" value="logout">
+        <input type="submit" value="Logout">
     </form>
 </body>
 </html>

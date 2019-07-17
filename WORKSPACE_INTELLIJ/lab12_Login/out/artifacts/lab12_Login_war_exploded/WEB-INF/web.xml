@@ -28,4 +28,8 @@
         <filter-name>profile-filter</filter-name>
         <url-pattern>/profile.jsp</url-pattern>
     </filter-mapping>
+    <filter-mapping>
+        <filter-name>profile-filter</filter-name>
+        <url-pattern>/welcome.jsp</url-pattern>
+    </filter-mapping>
 </web-app>

@@ -1,8 +1,6 @@
 package mum.edu.cs472.labs.lab12.controller;
-
 import mum.edu.cs472.labs.lab12.model.User;
 import mum.edu.cs472.labs.lab12.model.Users;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -10,8 +8,6 @@ import java.io.IOException;
 import java.util.List;
 
 public class LoginServlet extends HttpServlet {
-
-    private Object remember;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -55,6 +51,19 @@ public class LoginServlet extends HttpServlet {
                     }
                 }
             }
+
+            String value = "", checkbox = "";
+            Cookie[] cookies = req.getCookies();
+            if(cookies != null){
+                for(Cookie c : cookies){
+                    if(c.getName().equals("username")){
+                        value = c.getValue();
+                        checkbox = "checked";
+                        break;
+                    }
+                }
+            }
+
             RequestDispatcher rd = req.getRequestDispatcher("welcome.jsp");
             rd.forward(req, resp);
 //            resp.sendRedirect("welcome.jsp");

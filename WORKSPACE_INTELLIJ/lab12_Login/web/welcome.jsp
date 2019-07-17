@@ -15,7 +15,7 @@
         <p>This is your page......do stuff</p>
         <p><a href="profile.jsp">Profile Info</a></p>
         <form method="post" action="logout">
-            <input type="submit" value="logout">
+            <input type="submit" value="Logout">
         </form>
     </body>
 </html>

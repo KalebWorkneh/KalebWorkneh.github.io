@@ -7,7 +7,7 @@ public class Users {
 
     private List<User> users = new ArrayList<>();
     {
-        users.add(new User("john","1234","John K. Dany"));
+        users.add(new User("john","1230","John K. Dany"));
         users.add(new User("merry","4231","Merry S. Thompson"));
         users.add(new User("anna","0123","Anna K. Portski"));
     }
